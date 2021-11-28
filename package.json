@@ -1,0 +1,18 @@
+{
+  "name": "Filemanager.js",
+  "version": "1.0.0",
+  "description": "Filemanager.js",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.5",
+    "formidable": "^1.2.6",
+    "handlebars": "^4.7.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Wojciech Bałucki <wbalucki18@gmail.com>",
+  "license": "AGPL-3.0-or-later"
+}
