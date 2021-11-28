@@ -1,0 +1,45 @@
+<div style="float: left; width: 19%; height: 91%; background-color: rgb(146, 146, 146); color: lightgrey; font-size: 2em; text-align: center; font-family: sans-serif">
+    Filemanager<br>
+    <a href="remove-all" style="color: lightgrey"><u>Usuń wszystkie dane plików z tablicy</u></a>
+</div>
+<div style="float: left; width: 80%; font-color: lightgrey; font-size: 1.3em; margin-left: 10px; margin-top: -10px;">
+    <table>
+        <style>
+            table {
+                border-spacing: 0;
+                font-size: 1.3em;
+                width: 100%;
+                text-align: center;
+            }
+            td {
+                min-width: 50px;
+            }
+        </style>
+        <thead style="background-color: rgb(53, 73, 255);">
+            <tr>
+                <th>id</th>
+                <th>obraz</th>
+                <th>name</th>
+                <th>size</th>
+                <th>type</th>
+                <th>-</th>
+                <th>-</th>
+                <th>-</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each FILES}}
+            <tr>
+                <td>{{id}}</td>
+                <td><img src="{{img}}" width="20" height="20"></td>
+                <td>{{name}}</td>
+                <td>{{size}}</td>
+                <td>{{type}}</td>
+                <td><a href="/delete?id={{id}}">USUŃ</a></td>
+                <td><a href="/info?id={{id}}">INFO</a></td>
+                <td><a href="/download?id={{id}}" download="{{name}}">POBIERZ</a></td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
